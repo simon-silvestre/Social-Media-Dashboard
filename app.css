@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.header-top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%);
+    height: 240px;
+}
+
+.title-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+
+h1 {
+    color: hsl(230, 17%, 14%);
+    line-height: 1.4;
+}
+
+.title span, .mode-boutton span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.title span {
+   color: hsl(228, 12%, 44%);
+}
+
+.mode-boutton span {
+    color:hsl(230, 22%, 74%);
+}
+
+#mode {
+    margin-right: 10px;
+}
+
+.mode-boutton {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    padding-top: 15px;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(230, 22%, 74%);
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: linear-gradient(to left, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(22px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .header-bottom {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: -130px; 
+  }
+
+  .follower-container {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+  .followers-card {
+      width: 250px;
+      height: 210px;
+      background: hsl(227, 47%, 96%);
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      cursor: pointer;
+  }
+
+  .followers-card:hover {
+    background: hsl(229, 22%, 90%);
+  }
+
+
+  .facebook {
+      border-top: 4px solid hsl(208, 92%, 53%);
+  }
+
+  .twitter {
+    border-top: 4px solid hsl(203, 89%, 53%);
+  }
+
+  .instagram {
+    border-top: 4px solid hsl(329, 70%, 58%);
+  }
+
+  .youtube {
+    border-top: 4px solid hsl(348, 97%, 39%);
+  }
+
+  .pseudo {
+    display: flex;
+    align-items: center;
+    color: hsl(228, 12%, 44%);
+    font-weight: bold;
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+
+  .pseudo span {
+      margin-left: 8px;
+  }
+
+  .followers-card h2 {
+    color: hsl(230, 17%, 14%);
+    font-size: 60px;
+  }
+
+  #followers {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: hsl(228, 12%, 44%)
+  }
+
+  .notification {
+      display: flex;
+      align-items: center;
+      margin-top: 25px;
+      font-weight: bold;
+      color: hsl(163, 72%, 41%);
+  }
+
+  .down {
+    color: hsl(356, 69%, 56%)!important;
+  }
+
+  .notification small {
+      margin-left: 5px;
+  }
+
+  .notification svg {
+      padding-top: 2px;
+  }
+
+  section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .stats-section-container {
+      width: 80%;
+  }
+
+  section h3 {
+      color: hsl(228, 12%, 44%);
+      font-size: 1.6rem;
+      margin-top: 30px;
+  }
+
+  .stats-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .stats-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 250px;
+    height: 125px;
+    background: hsl(227, 47%, 96%);
+    border-radius: 6px;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+
+  .stats-card:hover {
+    background: hsl(229, 22%, 90%);
+  }
+
+  .stats-title {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+  }
+
+  .stats-title span {
+    width: 80px;
+    color: hsl(228, 12%, 44%);
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+  }
+
+  .stats-title svg {
+      margin-left: 100px;
+  }
+
+  .stats-nombre {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-top: 15px;
+  }
+
+  .stats-nombre span {
+      width: 80px;
+      color: hsl(230, 17%, 14%);
+      font-size: 30px;
+      font-weight: bold;
+      margin-left: 25px;
+  }
+
+  .stats-pourcentage-logo {
+      margin-bottom: 4px; 
+      margin-left: 80px;
+  }
+
+  .stats-nombre small {
+      width: 42px;
+    font-weight: bold;
+    color: hsl(163, 72%, 41%);
+  }
+
+
+
+.dark {
+    background-color: hsl(230, 17%, 14%);
+}
+.dark .header-top {
+    background-color: hsl(232, 19%, 15%);
+}
+
+.dark .followers-card, .dark .stats-card {
+    background-color: hsl(228, 28%, 20%);
+}
+
+.dark h1, .dark h2, .dark h3, .dark .stats-nombre span  {
+    color: hsl(0, 0%, 100%);
+}
+.dark .title span, .dark #mode, .dark .stats-title span, .dark .pseudo span, .dark #followers {
+    color: hsl(228, 34%, 66%);
+}
+
+.dark .followers-card:hover, .dark .stats-card:hover {
+    background-color: hsl(227, 27%, 23%);
+  }
+
+
+
+
+
+  @media screen and (max-width: 640px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .title {
+        padding-bottom: 20px;
+        border-bottom: 1px solid hsl(228, 12%, 44%);
+    }
+
+    .mode-boutton {
+        justify-content: space-between;
+    }
+
+    .mode-boutton span {
+        color: hsl(228, 12%, 44%)!important;
+    }
+
+    .title-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
+
+    .header-bottom {
+        margin-top: -110px;
+    }
+
+    .followers-card {
+        width: 321px;
+    }
+
+    .follower-container {
+        justify-content: center;
+    }
+
+    .stats-container {
+        justify-content: center;
+    }
+
+    .stats-card {
+        width: 325px;
+    }
+
+    .stats-title svg {
+        margin-left: 52%;
+    }
+    
+    .stats-pourcentage-logo {
+        margin-left: 43%;
+    }
+
+    section {
+        margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+
+    h1 {
+        font-size: 21px;
+    }
+    .header-bottom {
+        margin-top: -115px;
+    }
+
+    .stats-title svg {
+        margin-left: 40%;
+    }
+    
+    .stats-pourcentage-logo {
+        margin-left: 35%;
+    }
+  }
+  
