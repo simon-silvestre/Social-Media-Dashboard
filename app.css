@@ -234,11 +234,6 @@ h1 {
   }
 
   .stats-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
     width: 250px;
     height: 125px;
     background: hsl(227, 47%, 96%);
@@ -253,8 +248,7 @@ h1 {
 
   .stats-title {
       width: 100%;
-      display: flex;
-      justify-content: flex-start;
+      position: relative;
   }
 
   .stats-title span {
@@ -262,20 +256,20 @@ h1 {
     color: hsl(228, 12%, 44%);
     font-weight: bold;
     font-size: 14px;
-    margin-bottom: 10px;
-    margin-left: 25px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
   }
 
   .stats-title svg {
-      margin-left: 100px;
+    position: absolute;
+    right: 25px;
+    top: 25px;
   }
 
   .stats-nombre {
       width: 100%;
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-end;
-      margin-top: 15px;
+      position: relative;;
   }
 
   .stats-nombre span {
@@ -283,12 +277,15 @@ h1 {
       color: hsl(230, 17%, 14%);
       font-size: 30px;
       font-weight: bold;
-      margin-left: 25px;
+      position: absolute;
+      top: 65px;
+      left: 25px;
   }
 
   .stats-pourcentage-logo {
-      margin-bottom: 4px; 
-      margin-left: 80px;
+    position: absolute;
+    top: 75px;
+    right: 25px;
   }
 
   .stats-nombre small {
@@ -320,10 +317,6 @@ h1 {
 .dark .followers-card:hover, .dark .stats-card:hover {
     background-color: hsl(227, 27%, 23%);
   }
-
-
-
-
 
   @media screen and (max-width: 640px) {
 
@@ -370,14 +363,6 @@ h1 {
         width: 325px;
     }
 
-    .stats-title svg {
-        margin-left: 52%;
-    }
-    
-    .stats-pourcentage-logo {
-        margin-left: 43%;
-    }
-
     section {
         margin-bottom: 20px;
     }
@@ -390,14 +375,6 @@ h1 {
     }
     .header-bottom {
         margin-top: -115px;
-    }
-
-    .stats-title svg {
-        margin-left: 40%;
-    }
-    
-    .stats-pourcentage-logo {
-        margin-left: 35%;
     }
   }
   
